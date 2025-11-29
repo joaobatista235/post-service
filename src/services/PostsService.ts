@@ -1,5 +1,5 @@
-import postsRepository from "../repositories/PostsRepository";
-import { Post } from "../models/Post";
+import postsRepository from "@/repositories/PostsRepository";
+import { Post } from "@/models/Post";
 
 class PostsService {
 

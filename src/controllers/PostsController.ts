@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import postsService from "../services/PostsService";
+import postsService from "@/services/PostsService";
 
 class PostsController {
 

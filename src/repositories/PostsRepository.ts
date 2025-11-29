@@ -1,5 +1,5 @@
-import prisma from "../database/prisma";
-import { Post } from "../models/Post";
+import prisma from "@/database/prisma";
+import { Post } from "@/models/Post";
 
 class PostsRepository {
   async getAll() {
