@@ -3,29 +3,28 @@ import { Post } from "@/models/Post";
 
 class PostsService {
 
-  getAll() {
+  async getAll() {
     return postsRepository.getAll();
   }
 
-  getById(id: number) {
+  async getById(id: number) {
     return postsRepository.getById(id);
   }
 
-  create(data: Post) {
+  async create(data: Post) {
     return postsRepository.create(data);
   }
 
-  update(id: number, data: Post) {
+  async update(id: number, data: Post) {
     return postsRepository.update(id, data);
   }
 
-  delete(id: number) {
+  async delete(id: number) {
     return postsRepository.delete(id);
   }
 
-  search(term: string) {
+  async search(term: string) {
     if (!term || term.trim() === "") return [];
-
     return postsRepository.search(term);
   }
 
